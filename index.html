@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form">
+      <div class="left">
+        <div class="step-1">
+          <div id="stepNumber1" class="step-number">1</div>
+          <div class="step-info">
+            <p>STEP 1</p>
+            <h4>YOUR INFO</h4>
+          </div>
+        </div>
+        <div class="step-2">
+          <div id="stepNumber2" class="step-number">2</div>
+          <div class="step-info">
+            <p>STEP 2</p>
+            <h4>SELECT PLAN</h4>
+          </div>
+        </div>
+        <div class="step-3">
+          <div id="stepNumber3" class="step-number">3</div>
+          <div class="step-info">
+            <p>STEP 3</p>
+            <h4>ADD-ONS</h4>
+          </div>
+        </div>
+        <div class="step-4">
+          <div id="stepNumber4" class="step-number">4</div>
+          <div class="step-info">
+            <p>STEP 4</p>
+            <h4>SUMMARY</h4>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <h1 id="title">Personal Info</h1>
+        <p id="disc">
+          Please provide yoyr name, email address, and phone number.
+        </p>
+        <label id="personalInfo">
+          <p>Name</p>
+          <input type="text" placeholder="e.g. Stephen King" />
+          <p>Email Address</p>
+          <input type="text" placeholder="e.g. stephenking@lorem.com" />
+          <p>Phone Number</p>
+          <input type="text" placeholder="e.g. +1 234 567 890" />
+        </label>
+        <label id="selectPlan">
+          <div class="plan">
+            <div id="arcade">
+              <img src="assets/images/icon-arcade.svg" alt="" />
+              <h4>Arcade</h4>
+              <h5 id="arcadePrice">$9/mo</h5>
+              <h6 id="bunusYearlyArcade">2 Months Free</h6>
+            </div>
+            <div id="advanced">
+              <img src="assets/images/icon-advanced.svg" alt="" />
+              <h4>Advanced</h4>
+              <h5 id="advancePrice">$12/mo</h5>
+              <h6 id="bunusYearlyAdvance">2 Months Free</h6>
+            </div>
+            <div id="pro">
+              <img src="assets/images/icon-pro.svg" alt="" />
+              <h4>Pro</h4>
+              <h5 id="proPrice">$15/mo</h5>
+              <h6 id="bunusYearlyPro">2 Months Free</h6>
+            </div>
+          </div>
+          <div class="mmyy">
+            <h5 id="monthly" class="active">Monthly</h5>
+            <h5 id="yearly">Yearly</h5>
+          </div>
+        </label>
+        <div id="pickAddOns">
+          <div id="online" class="pick-content">
+            <div class="pick-service">
+              <div>
+                <h4>Online Service</h4>
+                <p>access multiplayer games</p>
+              </div>
+            </div>
+            <span id="pickOnline">+$1/mo</span>
+          </div>
+          <div id="storage" class="pick-content">
+            <div class="pick-service">
+              <div>
+                <h4>Larger storage</h4>
+                <p>Extra 1TB of cloud save</p>
+              </div>
+            </div>
+            <span id="pickStorage">+$2/mo</span>
+          </div>
+          <div id="custom" class="pick-content">
+            <div class="pick-service">
+              <div>
+                <h4>Customizable Profile</h4>
+                <p>Custom theme on your profile</p>
+              </div>
+            </div>
+            <span id="pickCostum">+$2/mo</span>
+          </div>
+        </div>
+        <div id="finishingUp">
+          <div  style="display: flex; gap: 5px; color: #02295a;">
+            <h4 id="finishChoossePlan"></h4><h4 id="finishTimePlan"></h4>
+          </div>
+          <hr style="margin: 20px 0;">
+          <div style="color: #9699ab;">
+            <h5 id="finishPAOPlan"></h5>
+          </div>
+        </div>
+        <div id="lastMessage" style="text-align: center;"
+        align-items: center;">
+          <img style="max-width: 50px;" src="assets/images/icon-thank-you.svg" alt="">
+          <h1 style="color: #02295a; margin: 20px 0;">Thank You</h1>
+          <p style="font-size: 14px; max-width: 380px; text-align: center; line-height: 20px;">Thanks for cinfirming your subscription! We hope you have fun using our platform. If ever need support, please fell free to email us at support@loremgaming.com</p>
+        </div>
+        <div class="buttons">
+          <button id="nextStepBtn">Next Step</button>
+          <button id="ConfirmBtn">Confirm</button>
+          <button id="backStepBtn">Go Back</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

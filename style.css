@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #bfe2fd;
+}
+.form{
+    background-color: #fff;
+    border-radius: 12px;
+    display: flex;
+    padding: 20px;
+}
+.left{
+    background-image: url(assets/images/bg-sidebar-desktop.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 12px;
+    padding: 30px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    min-height: 500px;
+}
+.step-1,.step-2,.step-3,.step-4{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.currentStep{
+    background-color: #bfe2fd;
+    color: #000;
+}
+.step-number{
+    border-radius: 50%;
+    border: #fff 1px solid;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left p{
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.right{
+    position: relative;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+label input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border-radius: 12px;
+    border: 1px solid #848aa1;
+    outline: none;
+}
+.right h1{
+    color: #02295a;
+}
+.right p{
+    color: #9699ab;
+}
+label p{
+    color: #02295a !important;
+    font-size: 14px;
+    font-weight: 700;
+}
+.buttons{
+    position: absolute;
+    bottom: 0px;
+    right: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 88%;
+}
+.buttons button{
+    padding: 12px 15px;
+    border-radius: 12px;
+    color: #fff;
+    background-color: #02295a;
+    border: none;
+    cursor: pointer;
+}
+.plan{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.plan div{
+    border: 1px solid #848aa1;
+    padding: 20px;
+    border-radius: 12px;
+    min-width: 130px;
+    cursor: pointer;
+    transition: .5s;
+}
+.plan div h5{
+    color: #31c823;
+}
+.plan div:hover{
+    background-color: #02295a;
+    color: #fff;
+}
+.plan div h4{
+    margin: 10px 0;
+}
+
+.mmyy{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.mmyy h5{
+    border: 1px #02295a solid;
+    border-radius: 12px;
+    padding: 10px 20px;
+    cursor: pointer;
+    min-width: 100px;
+    text-align: center;
+    font-size: 14px;
+    transition: .5s;
+}
+.mmyy h5:hover,.active{
+    background-color: #02295a;
+    color: #fff;
+}
+
+.plan-active{
+    background-color: #02295a;
+    color: #fff;
+}
+
+#bunusYearlyArcade,#bunusYearlyAdvance,#bunusYearlyPro{
+    margin-top: 10px;
+    font-size: 12px;
+    color: #719cbf;
+    display: none;
+}
+
+#backStepBtn{
+    background-color: transparent;
+    color: #848aa1;
+    font-weight: 500;
+    transition: .5s;
+    display: none;
+}
+#backStepBtn:hover{
+    color: #02295a;
+}
+
+
+#ConfirmBtn{
+    width: 120px;
+    background-color: #473dff;
+    display: none;
+}
+
+.pick-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #848aa1;
+    padding: 10px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-bottom: 25px;
+    transition: .5s;
+}
+.pick-content:hover{
+    border-color: #473dff;
+}
+.pick-service p{
+    font-size: 14px;
+    margin-top: 5px;
+}
+.pick-service input{
+    cursor: pointer;
+}
+.pick-content span{
+    color: #473dff;
+    font-size: 14px;
+}
+#pickAddOns{
+    display: flex;
+    flex-direction: column;
+}
+
+.pickaddactive{
+    background-color: #d4dce8;
+    border: 2px solid #473dff;
+    transition: none;
+}
+
+
+/* DOM */
+#selectPlan,#pickAddOns,#finishingUp,#lastMessage{
+    display: none;
+}
+
+
+
+
+
+
+/* Media */
+@media screen and (max-width:600px) {
+    .form{
+        flex-direction: column;
+    }
+    .left{
+        background-image: url(assets/images/bg-sidebar-mobile.svg);
+        min-height: 100px;
+    }
+    .plan {
+        
+        margin-bottom: 20px;
+    }
+    .mmyy{
+        margin-bottom: 50px;
+    }
+}
+
